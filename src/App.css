@@ -1,38 +1,135 @@
-.App {
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
   text-align: center;
+  color: #00796b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button {
+  display: block;
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input:focus {
+  outline: none;
+  border-color: #26a69a;
+  background-color: #ffffff;
+}
+
+button {
+  background-color: #00796b;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #004d40;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 15px 20px;
+  background: #f0f4f8;
+  margin-bottom: 12px;
+  border-left: 5px solid #00796b;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #e0f2f1;
+}
+
+li a {
+  background-color: #26a69a;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+li a:hover {
+  background-color: #00796b;
+}
+
+p {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.user-button {
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #7b2ff7, #40c9ff);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.user-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }

@@ -1,0 +1,45 @@
+.doctor-list-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fffdfd;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.doctor-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(246, 244, 244);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-info p {
+  margin: 0.25rem 0;
+}
+
+.doctor-action {
+  display: flex;
+  align-items: center;
+}
+
+.book-button {
+  background: #1f8938;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.book-button:hover {
+  background: #218838;
+}

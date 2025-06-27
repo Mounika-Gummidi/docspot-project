@@ -1,0 +1,39 @@
+.main-header {
+  background-color: #d4edf3;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-header nav a {
+  color: rgb(3, 66, 3);
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: #3d5a0f;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.username {
+  margin-right: 15px;
+  font-weight: bold;
+}
